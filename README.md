@@ -7,7 +7,9 @@ First  This project upload  Big file next it change some it's columns last write
 Example:
 
 COL0	COL1	COL2	COL3
+
 ID1	VAL11	VAL12	VAL12
+
 ID2	VAL21	VAL22	VAL23
 
 2. There is a configuration file that lists the columns that we want to extract. We want to translate the columns to 'our' names.
