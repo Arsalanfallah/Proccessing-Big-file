@@ -18,7 +18,9 @@ ID2	VAL21	VAL22	VAL23
 Example (skip column COL2):
 
 COL0	OURID
+
 COL1	OURCOL1
+
 COL3	OURCOL3
 
 
@@ -43,6 +45,7 @@ first row with 'our' column labels, further rows with the data we wanted to extr
 Example: expected output based on the examples above:
 
 OURID	OURCOL1	OURCOL3
+
 OURID2	VAL21	VAL23
 
 Finaly when the application finishs its processing,Output file is to be created automatically in following path:
