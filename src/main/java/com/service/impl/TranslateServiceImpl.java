@@ -1,7 +1,10 @@
 package com.service.impl;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import org.springframework.util.ResourceUtils;
 
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -9,6 +12,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.*;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
@@ -19,6 +23,8 @@ import java.util.stream.Stream;
 
 @Service
 public class TranslateServiceImpl implements TranslateService {
+
+    private static final Logger logger = LoggerFactory.getLogger(TranslateServiceImpl.class);
 
     @Value("${source.file.folder.path}")
     String sourceFilePath;
@@ -44,7 +50,7 @@ public class TranslateServiceImpl implements TranslateService {
 
     @Override
     public void asyncTranslate(String fileExtension) throws IOException, InterruptedException, ExecutionException {
-        Path sourcePath = Paths.get(sourceFilePath);
+        Path sourcePath = Paths.get(ResourceUtils.getFile("classpath:")+sourceFilePath);
         if (!Files.isDirectory(sourcePath)) {
             throw new IllegalArgumentException("Path must be a directory!");
         }
@@ -136,7 +142,7 @@ public class TranslateServiceImpl implements TranslateService {
         String[] strArray = str.split(columnSeparator);
 
         //read all items of  headerConfigFile
-        String myTextFile = headerConfigFile;
+        String myTextFile = ResourceUtils.getFile("classpath:"+headerConfigFile).getPath();
         Path myPath = Paths.get(myTextFile);
         try {
             List<String> list = Files.lines(myPath).collect(Collectors.toList());
@@ -174,7 +180,7 @@ public class TranslateServiceImpl implements TranslateService {
         AtomicReference<String> strings = new AtomicReference<String>("");
         String[] strArray = str.split(columnSeparator);
 
-        String myTextFile = rowConfigFile;
+        String myTextFile = ResourceUtils.getFile("classpath:"+rowConfigFile).getPath();
         Path myPath = Paths.get(myTextFile);
         try {
             List<String> list = Files.lines(myPath).collect(Collectors.toList());
@@ -205,9 +211,11 @@ public class TranslateServiceImpl implements TranslateService {
     }
 
     private void writeIntoFile(List<String> maps, Path path)throws IOException {
-        Path newPath = Paths.get(processFilePath + path.getFileName());
-        try (BufferedWriter writer = Files.newBufferedWriter(newPath, StandardCharsets.UTF_8)) {
-
+        Path newPath = Paths.get(ResourceUtils.getFile("classpath:")+processFilePath+ path.getFileName());
+        // Make sure the directories exist
+        Files.createDirectories(newPath.getParent());
+        try (BufferedWriter writer = Files.newBufferedWriter(newPath, StandardCharsets.UTF_8,StandardOpenOption.CREATE,
+                StandardOpenOption.WRITE)) {
             maps.forEach(map -> {
                 //write the result of all the tasks
                 try {
@@ -219,6 +227,8 @@ public class TranslateServiceImpl implements TranslateService {
 
                 }
             });
+            logger.debug("Application creat new file %s with rows {} ",path.getFileName(),maps.size());
+
         } catch (IOException ex) {
             ex.printStackTrace();
             throw ex;
