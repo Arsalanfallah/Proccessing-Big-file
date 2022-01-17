@@ -58,15 +58,22 @@ Get started with the Spring Boot application, a processing big file example.
 
 
 
-## 1. How to start
+##  How to start
+
+1-Run with maven
 
 $ cd Proccessing-Big-file-main
 
 
 $ mvn spring-boot:run
 
-
+2- Run with Docker
+ 
+ 2-1 docker build .
+ 
+ 2-2 docker run  IMAGE_ID
+ 
 
 ##2. log file 
 
-\Proccessing-Big-file-main\processing.log
+      \Proccessing-Big-file-main\processing.log
