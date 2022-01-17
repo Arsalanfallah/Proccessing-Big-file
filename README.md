@@ -5,15 +5,23 @@ Hello World sample shows how to deploy SpringBoot RESTful web service applicatio
 Prerequisite
 
 Installed:
+
 Docker
+
 git
 
 Optional:
+
 Docker-Compose
+
 Java 1.8 
+
 Maven 3.x
+
 Steps
+
 Clone source code from git
+
 
 $  git clone https://github.com/Arsalanfallah/Proccessing-Big-file.
 
