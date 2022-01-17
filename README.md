@@ -10,16 +10,16 @@ git
 
 Optional:
 Docker-Compose
-Java 1.8 or 11.1
+Java 1.8 
 Maven 3.x
 Steps
 Clone source code from git
 
-$  git clone https://github.com/dstar55/docker-hello-world-spring-boot .
+$  git clone https://github.com/Arsalanfallah/Proccessing-Big-file.
 
 Build Docker image
 
-$ docker build -t="hello-world-java" .
+$ docker build -t="Proccessing-Big-file" .
 
 Maven build will be executes during creation of the docker image.
 
@@ -27,25 +27,8 @@ Maven build will be executes during creation of the docker image.
 
 Run Docker Container
 
-$ docker run -p 8080:8080 -it --rm hello-world-java
+$ docker run  -it --rm Proccessing-Big-file
 
-
-
-
-1-Run with maven
-
-$ cd Proccessing-Big-file-main
-$ mvn clean package
-$ mvn spring-boot:run
-
-2- Run with Docker
- 
- 2-1 docker build .
- 
- 2-2 docker run  IMAGE_ID
- for example:
- 
- 
 
 ##2. log file 
 
