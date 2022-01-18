@@ -27,11 +27,6 @@ Get started with the Spring Boot application, a processing big file example.
 
 $ cd processingBigFile
 
-
-$ mvn spring-boot:run
-
-Installed:
-
 Docker
 
 git
