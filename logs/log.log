@@ -1,0 +1,60 @@
+18-01-2022 05:32:13.271 [main] INFO  com.MainApplication.logStarting - Starting MainApplication v0.0.1 on 8ca2f86d0335 with PID 1 (/demos.jar started by root in /)
+18-01-2022 05:32:13.275 [main] INFO  com.MainApplication.logStartupProfileInfo - The following profiles are active: dev
+18-01-2022 05:32:13.624 [main] INFO  com.MainApplication.logStarted - Started MainApplication in 0.604 seconds (JVM running for 1.014)
+18-01-2022 05:32:13.627 [main] INFO  com.config.TranslateListener.testLargeFile - Used memory pre run (MB): 22
+18-01-2022 05:32:13.629 [main] INFO  c.service.impl.TranslateServiceImpl.asyncTranslate - sourceFilePath is /usr/local/files/source/
+18-01-2022 05:32:13.643 [main] INFO  c.service.impl.TranslateServiceImpl.translateHeader - headerConfigFile is /usr/local/files/config/HeaderConfig.txt
+18-01-2022 05:32:13.653 [main] INFO  c.service.impl.TranslateServiceImpl.translateIdentifier - rowConfigFile is /usr/local/files/config/RowConfig.txt 
+18-01-2022 05:32:13.657 [main] INFO  c.service.impl.TranslateServiceImpl.translateIdentifier - rowConfigFile is /usr/local/files/config/RowConfig.txt 
+18-01-2022 05:32:13.663 [main] INFO  c.service.impl.TranslateServiceImpl.writeIntoFile - Application create new file projectFile.txt with rows 3 
+18-01-2022 05:32:13.665 [main] INFO  com.config.TranslateListener.testLargeFile - Used memory post run (MB): 23
+18-01-2022 05:32:13.665 [main] INFO  com.config.TranslateListener.testLargeFile - Memory consumed (MB): 1
+18-01-2022 05:32:13.666 [main] INFO  com.config.TranslateListener.testLargeFile - Time taken in MS: 39
+18-01-2022 05:33:32.416 [main] INFO  com.MainApplication.logStarting - Starting MainApplication v0.0.1 on 53f223ea9fd5 with PID 1 (/demos.jar started by root in /)
+18-01-2022 05:33:32.419 [main] INFO  com.MainApplication.logStartupProfileInfo - The following profiles are active: dev
+18-01-2022 05:33:32.798 [main] INFO  com.MainApplication.logStarted - Started MainApplication in 0.615 seconds (JVM running for 0.994)
+18-01-2022 05:33:32.801 [main] INFO  com.config.TranslateListener.testLargeFile - Used memory pre run (MB): 22
+18-01-2022 05:33:32.803 [main] INFO  c.service.impl.TranslateServiceImpl.asyncTranslate - sourceFilePath is /usr/local/files/source/
+18-01-2022 05:33:32.816 [main] INFO  c.service.impl.TranslateServiceImpl.translateHeader - headerConfigFile is /usr/local/files/config/HeaderConfig.txt
+18-01-2022 05:33:32.824 [main] INFO  c.service.impl.TranslateServiceImpl.translateIdentifier - rowConfigFile is /usr/local/files/config/RowConfig.txt 
+18-01-2022 05:33:32.828 [main] INFO  c.service.impl.TranslateServiceImpl.translateIdentifier - rowConfigFile is /usr/local/files/config/RowConfig.txt 
+18-01-2022 05:33:32.834 [main] INFO  c.service.impl.TranslateServiceImpl.writeIntoFile - Application create new file projectFile.txt with rows 3 
+18-01-2022 05:33:32.836 [main] INFO  com.config.TranslateListener.testLargeFile - Used memory post run (MB): 23
+18-01-2022 05:33:32.837 [main] INFO  com.config.TranslateListener.testLargeFile - Memory consumed (MB): 1
+18-01-2022 05:33:32.837 [main] INFO  com.config.TranslateListener.testLargeFile - Time taken in MS: 36
+18-01-2022 05:34:46.940 [main] INFO  com.MainApplication.logStarting - Starting MainApplication v0.0.1 on 53f223ea9fd5 with PID 1 (/demos.jar started by root in /)
+18-01-2022 05:34:46.943 [main] INFO  com.MainApplication.logStartupProfileInfo - The following profiles are active: dev
+18-01-2022 05:34:47.281 [main] INFO  com.MainApplication.logStarted - Started MainApplication in 0.572 seconds (JVM running for 0.939)
+18-01-2022 05:34:47.284 [main] INFO  com.config.TranslateListener.testLargeFile - Used memory pre run (MB): 22
+18-01-2022 05:34:47.286 [main] INFO  c.service.impl.TranslateServiceImpl.asyncTranslate - sourceFilePath is /usr/local/files/source/
+18-01-2022 05:34:47.300 [main] INFO  c.service.impl.TranslateServiceImpl.translateHeader - headerConfigFile is /usr/local/files/config/HeaderConfig.txt
+18-01-2022 05:34:47.308 [main] INFO  c.service.impl.TranslateServiceImpl.translateIdentifier - rowConfigFile is /usr/local/files/config/RowConfig.txt 
+18-01-2022 05:34:47.312 [main] INFO  c.service.impl.TranslateServiceImpl.translateIdentifier - rowConfigFile is /usr/local/files/config/RowConfig.txt 
+18-01-2022 05:34:47.319 [main] INFO  c.service.impl.TranslateServiceImpl.writeIntoFile - Application create new file projectFile.txt with rows 3 
+18-01-2022 05:34:47.321 [main] INFO  com.config.TranslateListener.testLargeFile - Used memory post run (MB): 23
+18-01-2022 05:34:47.321 [main] INFO  com.config.TranslateListener.testLargeFile - Memory consumed (MB): 1
+18-01-2022 05:34:47.322 [main] INFO  com.config.TranslateListener.testLargeFile - Time taken in MS: 38
+18-01-2022 05:36:14.689 [main] INFO  com.MainApplication.logStarting - Starting MainApplication v0.0.1 on 53f223ea9fd5 with PID 1 (/demos.jar started by root in /)
+18-01-2022 05:36:14.692 [main] INFO  com.MainApplication.logStartupProfileInfo - The following profiles are active: dev
+18-01-2022 05:36:15.037 [main] INFO  com.MainApplication.logStarted - Started MainApplication in 0.584 seconds (JVM running for 0.946)
+18-01-2022 05:36:15.040 [main] INFO  com.config.TranslateListener.testLargeFile - Used memory pre run (MB): 22
+18-01-2022 05:36:15.042 [main] INFO  c.service.impl.TranslateServiceImpl.asyncTranslate - sourceFilePath is /usr/local/files/source/
+18-01-2022 05:36:15.057 [main] INFO  c.service.impl.TranslateServiceImpl.translateHeader - headerConfigFile is /usr/local/files/config/HeaderConfig.txt
+18-01-2022 05:36:15.064 [main] INFO  c.service.impl.TranslateServiceImpl.translateIdentifier - rowConfigFile is /usr/local/files/config/RowConfig.txt 
+18-01-2022 05:36:15.068 [main] INFO  c.service.impl.TranslateServiceImpl.translateIdentifier - rowConfigFile is /usr/local/files/config/RowConfig.txt 
+18-01-2022 05:36:15.075 [main] INFO  c.service.impl.TranslateServiceImpl.writeIntoFile - Application create new file projectFile.txt with rows 3 
+18-01-2022 05:36:15.078 [main] INFO  com.config.TranslateListener.testLargeFile - Used memory post run (MB): 23
+18-01-2022 05:36:15.078 [main] INFO  com.config.TranslateListener.testLargeFile - Memory consumed (MB): 1
+18-01-2022 05:36:15.079 [main] INFO  com.config.TranslateListener.testLargeFile - Time taken in MS: 39
+18-01-2022 05:36:38.716 [main] INFO  com.MainApplication.logStarting - Starting MainApplication v0.0.1 on 53f223ea9fd5 with PID 1 (/demos.jar started by root in /)
+18-01-2022 05:36:38.719 [main] INFO  com.MainApplication.logStartupProfileInfo - The following profiles are active: dev
+18-01-2022 05:36:39.073 [main] INFO  com.MainApplication.logStarted - Started MainApplication in 0.588 seconds (JVM running for 0.955)
+18-01-2022 05:36:39.076 [main] INFO  com.config.TranslateListener.testLargeFile - Used memory pre run (MB): 22
+18-01-2022 05:36:39.078 [main] INFO  c.service.impl.TranslateServiceImpl.asyncTranslate - sourceFilePath is /usr/local/files/source/
+18-01-2022 05:36:39.092 [main] INFO  c.service.impl.TranslateServiceImpl.translateHeader - headerConfigFile is /usr/local/files/config/HeaderConfig.txt
+18-01-2022 05:36:39.102 [main] INFO  c.service.impl.TranslateServiceImpl.translateIdentifier - rowConfigFile is /usr/local/files/config/RowConfig.txt 
+18-01-2022 05:36:39.107 [main] INFO  c.service.impl.TranslateServiceImpl.translateIdentifier - rowConfigFile is /usr/local/files/config/RowConfig.txt 
+18-01-2022 05:36:39.114 [main] INFO  c.service.impl.TranslateServiceImpl.writeIntoFile - Application create new file projectFile.txt with rows 3 
+18-01-2022 05:36:39.116 [main] INFO  com.config.TranslateListener.testLargeFile - Used memory post run (MB): 23
+18-01-2022 05:36:39.116 [main] INFO  com.config.TranslateListener.testLargeFile - Memory consumed (MB): 1
+18-01-2022 05:36:39.117 [main] INFO  com.config.TranslateListener.testLargeFile - Time taken in MS: 41

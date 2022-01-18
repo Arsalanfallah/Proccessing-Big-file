@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  process-files:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: process-files
+    container_name: process-files
+    networks:
+      - local-network
+    volumes:
+      - type: bind
+        source: ./files
+        target: /usr/local/files
+      - type: bind
+        source: ./logs
+        target: /logs
+networks:
+  local-network:
+    name: process-files
