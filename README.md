@@ -1,5 +1,5 @@
 # Proccessing-Big-file
-First  This project upload  Big file next it change some it's columns last write new file with new columns
+First,  This project upload  Big file. next, it changes some  columns of this file. last,this App writes all of rows into new file.. 
 
 
 
